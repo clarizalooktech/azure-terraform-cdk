@@ -1,5 +1,5 @@
-# Azure Terraform CDK - Create Virtual Machine
-Content for creating an Azure resource group using infrastructure as code - Terraform
+# Azure Terraform CDK - Create Virtual Machine (Typescript)
+Repo for creating an Azure VM resource using infrastructure as code - Terraform CDK
 
 ## 1. Install Tf CLI
 > npm install --global cdktf-cli@latest
