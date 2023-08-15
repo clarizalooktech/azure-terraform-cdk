@@ -4,11 +4,17 @@ Repo for creating an Azure VM resource using infrastructure as code - Terraform 
 ## 1. Install Tf CLI
 > npm install --global cdktf-cli@latest
 
-## 2. Synthesize Tf
+## 2. Install AzureRm Provider
+> npm install @cdktf/provider-azurerm
+
+## 3. Initialize AzureRm Provider
+> cdktf get
+
+## 4. Synthesize Tf
 > cdktf synth
 
-## 3.  Deploy tf
+## 5.  Deploy tf
 > cdktf deploy
 
-## 4.  Destroy resources
+## 6.  Destroy resources
 > cdktf destroy
