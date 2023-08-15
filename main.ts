@@ -49,6 +49,7 @@ class VmStack extends TerraformStack {
       name: "vm1",
       resourceGroupName: rg.name,
       adminUsername: "testuser",
+      adminPassword:"#23d-1exms--@sj", //this shoud be under a variable name
       size: "Standard_F2",
       location: rg.location,
       networkInterfaceIds: [
@@ -58,7 +59,7 @@ class VmStack extends TerraformStack {
         caching: "ReadWrite",
         storageAccountType: "Standard_LRS",
       },
-      disablePasswordAuthentication: true,
+      disablePasswordAuthentication: false,
       sourceImageReference: {
         publisher: "Canonical",
         offer: "UbuntuServer",
